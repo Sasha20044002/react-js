@@ -1,14 +1,12 @@
 import React from 'react';
-import MessageField from './components/MessageField'
-import Message from './components/Message'
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './components/AppRouter'
 
 const App = () => {
     return (
-        <div>
-            <MessageField>
-                <Message></Message>
-            </MessageField>
-        </div>
+        <BrowserRouter>
+            <AppRouter />
+        </BrowserRouter>
     );
 };
 
